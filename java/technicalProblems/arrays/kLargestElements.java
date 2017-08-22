@@ -1,4 +1,4 @@
-package technicalProblems;
+package technicalProblems.arrays;
 
 /**
 
