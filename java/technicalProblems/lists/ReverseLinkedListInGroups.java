@@ -1,6 +1,7 @@
 package technicalProblems.lists;
 
 import dataStructures.SinglyLinkedList;
+import dataStructures.SinglyLinkedList.Node;
 
 /**
  *
@@ -24,8 +25,24 @@ import dataStructures.SinglyLinkedList;
  4 2 2 1 8 7 6 5
 
  */
-public class reverseLinkedListInGroups {
-    Node iterationMethod(Node head, int k) {
+public class ReverseLinkedListInGroups {
+    public static void main(String args[]) {
+        SinglyLinkedList list = new SinglyLinkedList();
+        list.push(8);
+        list.push(7);
+        list.push(6);
+        list.push(5);
+        list.push(4);
+        list.push(2);
+        list.push(2);
+        list.push(1);
+
+        int k = 4;
+        iterationMethod(list.head, k);
+        list.print();
+    }
+
+    public static Node iterationMethod(Node head, int k) {
         Node current = head;
         Node next = null;
         Node prev = null;

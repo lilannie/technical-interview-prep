@@ -1,5 +1,7 @@
 package technicalProblems.arrays;
 
+import util.Printing;
+
 /**
 
  Problem:
@@ -20,8 +22,32 @@ package technicalProblems.arrays;
  1 <= C[i] <= 1000
 
  */
-public class kLargestElements {
-    void bubbleSortMethod(int arr[], int k) {
+public class KLargestElements {
+
+    public static void main(String args[]) {
+        int[] arr = { 12, 5, 787, 1, 23 };
+        int k = 2;
+        findKLargest(arr, k);
+
+        arr = new int[]{ 1, 23, 12, 9, 30, 2, 50 };
+        k = 3;
+        findKLargest(arr, k);
+    }
+
+    public static void findKLargest(int arr[], int k) {
+        bubbleSortMethod(arr, k);
+
+        System.out.print("After bubble sorting:");
+        Printing.printArray(arr);
+
+        System.out.println("K Largest:");
+        for (int i = arr.length -1; i > arr.length - 1 - k; i--) {
+            System.out.print(arr[i]+" ");
+        }
+        System.out.println();
+    }
+
+    public static void bubbleSortMethod(int arr[], int k) {
         int n = arr.length;
         for (int i = 0; i < k; i++) {
             for (int j = 0; j < n - i - 1; j++) {
