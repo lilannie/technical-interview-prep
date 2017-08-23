@@ -19,9 +19,7 @@ public class SinglyLinkedList {
         head = newNode;
     }
 
-    public void print() {
-        Node current = head;
-
+    public void print(Node current) {
         while (current != null) {
             System.out.print(current.data+" -> ");
             current = current.next;

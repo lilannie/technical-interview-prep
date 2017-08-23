@@ -33,16 +33,16 @@ public class ReverseLinkedListInGroups {
         list.push(6);
         list.push(5);
         list.push(4);
-        list.push(2);
+        list.push(3);
         list.push(2);
         list.push(1);
 
         int k = 4;
-        iterationMethod(list.head, k);
-        list.print();
+        list.head = recursiveMethod(list, list.head, k);
+        list.print(list.head);
     }
 
-    public static Node iterationMethod(Node head, int k) {
+    public static Node recursiveMethod(SinglyLinkedList list, Node head, int k) {
         Node current = head;
         Node next = null;
         Node prev = null;
@@ -62,7 +62,7 @@ public class ReverseLinkedListInGroups {
           Recursively call for the list starting from current.
           And make rest of the list as next of first node */
         if (next != null)
-            head.next = iterationMethod(next, k);
+            head.next = recursiveMethod(list, next, k);
 
         // prev is now head of input list
         return prev;
