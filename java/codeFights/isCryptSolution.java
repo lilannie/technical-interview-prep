@@ -1,4 +1,4 @@
-package code_fights;
+package codeFights;
 
 import java.util.HashMap;
 

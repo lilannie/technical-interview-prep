@@ -1,7 +1,6 @@
-package acm_practice;
+package acmPractice;
 
 import java.io.BufferedInputStream;
-import java.io.IOException;
 import java.math.BigInteger;
 import java.util.Scanner;
 

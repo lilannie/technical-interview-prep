@@ -1,4 +1,4 @@
-package acm_practice;
+package acmPractice;
 
 import java.io.BufferedInputStream;
 import java.util.Scanner;

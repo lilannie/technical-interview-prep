@@ -1,4 +1,4 @@
-package acm_practice;
+package acmPractice;
 
 // @JUDGE_ID: 922790
 // @PROBLEM ID: 10260 Soundex

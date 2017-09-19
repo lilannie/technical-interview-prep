@@ -1,4 +1,4 @@
-package code_fights;
+package codeFights;
 
 public class checkSudoku {
     boolean sudoku2(char[][] grid) {
