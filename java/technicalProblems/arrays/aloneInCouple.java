@@ -1,5 +1,6 @@
 package technicalProblems.arrays;
 
+// TODO
 public class aloneInCouple {
 
     static int getSingle(int[] arr, int n) {
