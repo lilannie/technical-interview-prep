@@ -15,6 +15,7 @@ import java.util.LinkedList;
  */
 public class findProfession {
 
+    // O(2^(l-1)) where l = level
     String findProfessionBFS(int level, int pos) {
         // BFS approach
         int curr_level = 0;
@@ -61,6 +62,7 @@ public class findProfession {
         return "";
     }
 
+    // O(level)
     String findProfessionIteratively(int level, int pos) {
         String levelString = "";
 
