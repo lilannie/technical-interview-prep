@@ -15,7 +15,7 @@ public class Tree<T> {
     public Tree<T> left;
     public Tree<T> right;
 
-    Tree(T x) {
+    public Tree(T x) {
      value = x;
     }
 }
