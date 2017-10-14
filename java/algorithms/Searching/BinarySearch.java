@@ -1,4 +1,4 @@
-package algorithms.searching;
+package algorithms.Searching;
 
 import java.lang.reflect.Array;
 
